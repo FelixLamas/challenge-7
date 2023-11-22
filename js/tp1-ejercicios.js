@@ -113,3 +113,65 @@ input: 210
 
 Output: El 20 es divisible por 2 y por 5.
 Output: El 210 es divisible por 2, por 3, por 5 y por 7.*/
+
+let divisibleGeneral = parseInt(prompt("Ingrese un numero:"));
+
+if (divisibleGeneral % 2 === 0) {
+  if (divisibleGeneral % 3 === 0) {
+    if (divisibleGeneral % 5 === 0) {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 2, 3, 5 y 7");
+      } else {
+        console.log("El numero es divisible por 2, 3 y 5 ");
+      }
+    } else {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 2, 3 y 7 ");
+      } else {
+        console.log("El numero es divisible por 2 y 3 ");
+      }
+    }
+  } else {
+    if (divisibleGeneral % 5 === 0) {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 2, 5 y 7");
+      } else {
+        console.log("El numero es divisible por 2 y 5 ");
+      }
+    } else {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 2 y 7 ");
+      } else {
+        console.log("El numero es divisible por 2");
+      }
+    }
+  }
+} else {
+  if (divisibleGeneral % 3 === 0) {
+    if (divisibleGeneral % 5 === 0) {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 3, 5 y 7");
+      } else {
+        console.log("El numero es divisible por 3 y 5 ");
+      }
+    } else {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 3 y 7 ");
+      } else {
+        console.log("El numero es divisible por  3 ");
+      }
+    }
+  } else {
+    if (divisibleGeneral % 5 === 0) {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por 5 y 7");
+      } else {
+        console.log("El numero es divisible por y 5 ");
+      }
+    } else {
+      if (divisibleGeneral % 7 === 0) {
+        console.log("El numero es divisible por  7 ");
+      }
+    }
+  }
+}

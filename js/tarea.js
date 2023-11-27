@@ -127,33 +127,68 @@ if (numero % 2 === 0) {
 // }
 
 // Crear un programa que pida al usuario dos números y luego muestre si su suma es mayor, menor o igual a 100.
-let num1 = parseInt(prompt("Ingrese el primer numero"));
-let num2 = parseInt(prompt("Ingrese el segundo numero"));
-let suma = num1 + num2;
-const regexNum = /([0-9])$/;
-if (regexNum.test(num1) && regexNum.test(num2)) {
-  if (suma > 100) {
-    console.log(
-      "La suma de los numeros ingresado es" + suma + " y es mayor que 100"
-    );
-  } else if (suma < 100) {
-    console.log(
-      "La suma de los numeros ingresado es" + suma + " y es menor que 100"
-    );
-  } else {
-    console.log(
-      "La suma de los numeros ingresado es" + suma + " y es igual que 100"
-    );
-  }
-} else {
-  console.log("No se ingresaron datos correctos");
-}
+// let num1 = parseInt(prompt("Ingrese el primer numero"));
+// let num2 = parseInt(prompt("Ingrese el segundo numero"));
+// let suma = num1 + num2;
+// const regexNum = /([0-9])$/;
+// if (regexNum.test(num1) && regexNum.test(num2)) {
+//   if (suma > 100) {
+//     console.log(
+//       "La suma de los numeros ingresado es" + suma + " y es mayor que 100"
+//     );
+//   } else if (suma < 100) {
+//     console.log(
+//       "La suma de los numeros ingresado es" + suma + " y es menor que 100"
+//     );
+//   } else {
+//     console.log(
+//       "La suma de los numeros ingresado es" + suma + " y es igual que 100"
+//     );
+//   }
+// } else {
+//   console.log("No se ingresaron datos correctos");
+// }
 
 // Crear un programa que pida al usuario tres números y luego muestre cuál es el mayor de los tres.
+// let num1 = parseInt(prompt("Ingrese el primer numero entero: "));
+// let num2 = parseInt(prompt("Ingrese el segundo numero entero: "));
+// let num3 = parseInt(prompt("Ingrese el tercer numero entero: "));
+
+// let max = Math.max(num1, num2, num3);
+// console.log("El mayor de los trs numero es ingresado es: " + max);
 
 // Crear un programa que pida al usuario una letra y luego muestre si es una letra mayúscula o minúscula.
+// let letra = prompt("ingresa una letra");
+// const regexLetraMayus = /([A-Z])$/;
+// const regexLetraMinus = /([a-z])$/;
+// if (regexLetraMayus.test(letra) || regexLetraMinus.test(letra)) {
+//   if (regexLetraMayus.test(letra)) {
+//     console.log("La letra es una letra mayúscula");
+//   } else {
+//     console.log("La letra es una letra minúscula");
+//   }
+// } else {
+//   console.log("No se ingreso una letra.");
+// }
 
 // Crear un programa que pida al usuario un número y luego muestre si es un número perfecto o no. Un número perfecto es aquel que es igual a la suma de sus divisores propios.
+// const regexNum = /([0-9])$/;
+// let num = parseInt(prompt("Ingrese un numero Natural"));
+// if (regexNum.test(num)) {
+//   let acumulador = 0;
+//   for (let i = 1; i < num; i++) {
+//     if (num % i === 0) {
+//       acumulador = acumulador + i;
+//     }
+//   }
+//   if (acumulador === num) {
+//     console.log("El número ingresado es un número perfecto");
+//   } else {
+//     console.log("El número ingresado NO es un número perfecto");
+//   }
+// } else {
+//   console.log("No se ingreso un numero Natural");
+// }
 
 // Crear un programa que pida al usuario un número y luego muestre su descomposición en factores primos.
 
@@ -162,28 +197,334 @@ if (regexNum.test(num1) && regexNum.test(num2)) {
 //TAREA 1 Switch
 
 // 1) Crea un programa que reciba un número del 1 al 12 y muestre el nombre del mes correspondiente.
+// const regexNum = /([0-9])$/;
+// let num = parseInt(prompt("Ingrese un numero del 1 al 12"));
+// if (regexNum.test(num)) {
+//   if (1 <= num && num <= 12) {
+//     switch (num) {
+//       case 1:
+//         console.log("Enero");
+//         break;
+//       case 2:
+//         console.log("Febrero");
+//         break;
+//       case 3:
+//         console.log("Marzo");
+//         break;
+//       case 4:
+//         console.log("Abril");
+//         break;
+//       case 5:
+//         console.log("Mayo");
+//         break;
+//       case 6:
+//         console.log("Junio");
+//         break;
+//       case 7:
+//         console.log("Julio");
+//         break;
+//       case 8:
+//         console.log("Agosto");
+//         break;
+//       case 9:
+//         console.log("Septiembre");
+//         break;
+//       case 10:
+//         console.log("Octubre");
+//         break;
+//       case 11:
+//         console.log("Noviembre");
+//         break;
+//       case 12:
+//         console.log("Diciembre");
+//         break;
+//     }
+//   } else {
+//     console.log("No se ingreso nu número del 1 al 12");
+//   }
+// } else {
+//   console.log("No se ingreso un número.");
+// }
+
 // 2) Crea un programa que reciba un número del 1 al 7 y muestre el día de la semana correspondiente.
+// const regexNum = /([1-7])$/;
+// let num = parseInt(prompt("Ingrese un numero del 1 al 7"));
+// if (regexNum.test(num)) {
+//   switch (num) {
+//     case 1:
+//       console.log("Lunes");
+//       break;
+//     case 2:
+//       console.log("Martes");
+//       break;
+//     case 3:
+//       console.log("Miercoles");
+//       break;
+//     case 4:
+//       console.log("Jueves");
+//       break;
+//     case 5:
+//       console.log("Viernes");
+//       break;
+//     case 6:
+//       console.log("Sabado");
+//       break;
+//     case 7:
+//       console.log("Domingo");
+//       break;
+//   }
+// } else {
+//   console.log("No se ingreso un número. O no esta en en rango de 1 a 7");
+// }
+
 // 3) Crea un programa que reciba un carácter y muestre si es una vocal o una consonante.
+// let letra = prompt("Ingresa una letra");
+// const regexLetra = /([a-z A-Z])$/;
+// if (regexLetra.test(letra)) {
+//   //valido que lo que se ingresa sea una letra
+//   let minuscula = letra.toLocaleLowerCase();
+//   switch (minuscula) {
+//     case "a":
+//     case "e":
+//     case "i":
+//     case "o":
+//     case "u":
+//       console.log("La letra ingresada es una vocal");
+//       break;
+//     case "b":
+//     case "c":
+//     case "d":
+//     case "f":
+//     case "g":
+//     case "h":
+//     case "j":
+//     case "k":
+//     case "l":
+//     case "m":
+//     case "n":
+//     case "ñ":
+//     case "p":
+//     case "q":
+//     case "r":
+//     case "s":
+//     case "t":
+//     case "v":
+//     case "w":
+//     case "x":
+//     case "y":
+//     case "z":
+//       console.log("La letra ingresada es una consonante");
+//       break;
+//   }
+// } else {
+//   console.log("No se ingreso una letra");
+// }
+
 // 4) Crea un programa que reciba un número del 1 al 5 y muestre el nombre del día de la semana correspondiente a esa posición en un arreglo.
+// const regexNum = /([1-5])$/;
+// let num = parseInt(prompt("Ingrese un numero del 1 al 5"));
+// let semana = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+
+// if (regexNum.test(num)) {
+//   switch (num) {
+//     case 1:
+//       console.log(semana[0]);
+//       break;
+//     case 2:
+//       console.log(semana[1]);
+//       break;
+//     case 3:
+//       console.log(semana[2]);
+//       break;
+//     case 4:
+//       console.log(semana[3]);
+//       break;
+//     case 5:
+//       console.log(semana[4]);
+//       break;
+//   }
+// } else {
+//   console.log("No se ingreso un número. O no esta en en rango de 1 a 5");
+// }
+
 // 5) Crea un programa que reciba una letra y muestre si es mayúscula o minúscula.
+// let letra = prompt("Ingresa una letra");
+// const regexLetra = /([a-z A-Z])$/;
+// if (regexLetra.test(letra)) {
+//   switch (letra) {
+//     case letra.toLocaleLowerCase():
+//       console.log("La letra es una letra minúscula");
+//       break;
+//     default:
+//       console.log("La letra es una letra mayúscula");
+//       break;
+//   }
+// } else {
+//   console.log("No se ingreso una letra.");
+// }
+
 // 6) Crea un programa que reciba una nota del 0 al 10 y muestre la calificación correspondiente (suspenso, aprobado, notable, sobresaliente).
+// const regexNum = /([0-9])$/;
+// let num = parseInt(prompt("Ingrese un numero del 0 al 10"));
+// if (regexNum.test(num)) {
+//   switch (num) {
+//     case 0:
+//     case 1:
+//     case 2:
+//     case 3:
+//     case 4:
+//     case 5:
+//       console.log("Suspenso");
+//       break;
+//     case 6:
+//     case 7:
+//       console.log("Aprobado");
+//       break;
+//     case 8:
+//     case 9:
+//       console.log("Notable");
+//       break;
+//     case 10:
+//       console.log("Sobresaliente");
+//       break;
+//   }
+// } else {
+//   console.log("No se ingreso un numero. O no esta en el rango del 0 al 10");
+// }
 
 //TAREA 2 Ciclos
-
 // Imprimir los números pares del 2 al 20 en la consola.
+// for (let i = 2; i <= 20; i++) {
+//   if (i % 2 === 0) {
+//     console.log(i);
+//   }
+// }
+
 // Recorrer un string y mostrar en la consola cada letra en mayúsculas.
+// let cadena = prompt("Ingrese una cadena:");
+// const regexLetra = /([a-z A-Z])$/;
+// if (regexLetra.test(cadena)) {
+//   for (let i = 0; i < cadena.length; i++) {
+//     if (cadena[i] === cadena[i].toUpperCase() && cadena[i] !== " ") {
+//       console.log(cadena[i]);
+//     }
+//   }
+// } else {
+//   console.log("No se ingreso una cadena valida.");
+// }
+
 // Pedir al usuario que ingrese un número y mostrar en la consola los números del 1 al número ingresado.
+// const regexNum = /([0-9])$/;
+// let num = parseInt(prompt("Ingrese un número:"));
+// if (regexNum.test(num) && num >= 1) {
+//   for (let i = 1; i <= num; i++) {
+//     console.log(i);
+//   }
+// } else {
+//   console.log("No se ingreso un número");
+// }
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más grande de la serie.
+// let cadena = prompt("Ingrese una cadena de números separados por coma:");
+// let arregloNum = cadena.split(",");
+// let mayor = parseInt(arregloNum[0]);
+// console.log(arregloNum);
+// for (let i = 1; i < arregloNum.length; i++) {
+//   if (parseInt(arregloNum[i]) > mayor) {
+//     mayor = parseInt(arregloNum[i]);
+//   }
+// }
+// console.log("El número mas grande de la serie es: " + mayor);
+
 // Pedir al usuario que ingrese una palabra y mostrar en la consola si la palabra es un palíndromo o no.
+// let cadena = prompt("Ingrese una cadena:");
+// const regexLetra = /([a-z A-Z])$/;
+// if (regexLetra.test(cadena)) {
+//   let medio = Math.trunc(cadena.length / 2);
+//   let bandera = true;
+//   let indiceInverso = cadena.length - 1;
+//   for (let i = 0; i < medio; i++) {
+//     if (cadena[i] !== cadena[indiceInverso]) {
+//       bandera = false;
+//     }
+//     indiceInverso--;
+//   }
+//   if (bandera === true) {
+//     console.log("La cadena ingresada es un palíndromo");
+//   } else {
+//     console.log("La cadena ingresada NO es un palíndromo");
+//   }
+// } else {
+//   console.log("No se ingreso una cadena valida");
+// }
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la suma de los números pares.
+// let cadena = prompt("Ingrese una cadena de números separados por coma:");
+// let arregloNum = cadena.split(",");
+// let suma = 0;
+// for (let i = 0; i < arregloNum.length; i++) {
+//   if (parseInt(arregloNum[i]) % 2 === 0) {
+//     suma = suma + parseInt(arregloNum[i]);
+//   }
+// }
+// if (suma === 0) {
+//   console.log(
+//     "No se ingreso una cadena valida o no hay numeros pares en la cadena"
+//   );
+// } else {
+//   console.log("La suma de los números pares de la cadena es: " + suma);
+// }
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números negativos.
+// let cadena = prompt("Ingrese una cadena de números separados por coma:");
+// let arregloNum = cadena.split(",");
+// let cantidad = 0;
+// for (let i = 0; i < arregloNum.length; i++) {
+//   if (parseInt(arregloNum[i]) <= 0) {
+//     cantidad++;
+//   }
+// }
+// if (cantidad === 0) {
+//   console.log(
+//     "No se ingreso una cadena valida o no hay numeros negativos en la cadena"
+//   );
+// } else {
+//   console.log("La cantidad de números negativos de la cadena es: " + cantidad);
+// }
+
 // Pedir al usuario que ingrese un número y mostrar en la consola todos los números impares desde el 1 hasta el número ingresado.
+// const regexNum = /([0-9])$/;
+// let num = parseInt(prompt("Ingrese un número:"));
+// if (regexNum.test(num)) {
+//   for (let i = 1; i <= num; i++) {
+//     if (i % 2 !== 0) {
+//       console.log(i);
+//     }
+//   }
+// } else {
+//   console.log("No se ingreso un numero");
+// }
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola el número más pequeño de la serie.
+// let cadena = prompt("Ingrese una cadena de números separados por coma:");
+// let arregloNum = cadena.split(",");
+// let min = parseInt(arregloNum[0]);
+// for (let i = 1; i < arregloNum.length; i++) {
+//   if (min > arregloNum[i]) {
+//     min = parseInt(arregloNum[i]);
+//   }
+// }
+// if (arregloNum.length !== 0) {
+//   console.log("El número mas pequeño de la serie ingresada es: " + min);
+// } else {
+//   console.log("No se ingreso una cadena valida");
+// }
+
 // Pedir al usuario que adivine un número generado aleatoriamente entre 1 y 100. Mostrar en la consola si el usuario adivinó o no el número y la cantidad de intentos que le tomó.
+
 // Pedir al usuario que ingrese una serie de números separados por coma y mostrar en la consola la cantidad de números pares.
 
 //TAREA 3 Arrays
-
 // Dado un array de números, escribir una función que retorne el número más grande del array.
 
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.

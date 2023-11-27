@@ -526,19 +526,130 @@ if (numero % 2 === 0) {
 
 //TAREA 3 Arrays
 // Dado un array de números, escribir una función que retorne el número más grande del array.
+// let arregloNum = [2, 3, 500, 6, 80, 90];
+// console.log("El número mas grande del arreglo es: " + Math.max(...arregloNum));
 
 // Dado un array de números, escribir una función que retorne un nuevo array con los números pares del array original.
+// let arregloNum = [2, 3, 1, 5, 1, 7, 8, 9];
+
+// function pares(...arregloNum) {
+//   let arregloPares = [];
+//   for (let i = 0; i < arregloNum.length; i++) {
+//     if (arregloNum[i] % 2 === 0) {
+//       arregloPares.push(arregloNum[i]);
+//     }
+//   }
+//   return arregloPares;
+// }
+
+// console.log("El arreglo con numeros pares es:" + pares(...arregloNum));
 
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array.
+// let arregloNum = [2, 3, 4, 5];
+// function suma(...arregloNum) {
+//   let suma = 0;
+//   for (let i = 0; i < arregloNum.length; i++) {
+//     suma = suma + arregloNum[i];
+//   }
+//   return suma;
+// }
+// console.log(
+//   "La suma de todos los números del arreglo es:" + suma(...arregloNum)
+// );
 
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings en mayúsculas.
+// let cadena = "hola mundo desde rollingcode";
+// function cambioMayuscula(...cadena) {
+//   return cadena.join("").toUpperCase();
+// }
+// console.log("La cadena modificada es: " + cambioMayuscula(...cadena));
 
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X.
+// let arregloNum = [2, 3, 4, 5, 6, 7, 8, 9];
+// let numX = 7;
+// function mayoresX(arregloNum, numX) {
+//   let nuevoArreglo = [];
+//   for (let i = 0; i < arregloNum.length; i++) {
+//     if (arregloNum[i] > numX) {
+//       nuevoArreglo.push(parseInt(arregloNum[i]));
+//     }
+//   }
+//   return nuevoArreglo;
+// }
+// console.log(
+//   "El arreglo con los números mayores que " +
+//     numX +
+//     " es " +
+//     mayoresX(arregloNum, numX)
+// );
 
 // Dado un array de números, escribir una función que retorne la suma de todos los números del array. Además, si algún número es mayor que 10, agregarlo a un nuevo array de "números grandes".
+// let arregloNum = [2, 30, 2, 6, 40, 8, 5, 9];
+// let arregloMayorDiez = [];
+// function sumar(arregloNum, arregloMayorDiez) {
+//   let suma = 0;
+//   for (let i = 0; i < arregloNum.length; i++) {
+//     suma = suma + parseInt(arregloNum[i]);
+//     if (parseInt(arregloNum[i]) > 10) {
+//       arregloMayorDiez.push(arregloNum[i]);
+//     }
+//   }
+//   return suma;
+// }
+// console.log(
+//   "La suma de todos los números del arreglo es: " +
+//     sumar(arregloNum, arregloMayorDiez) +
+//     " Y el arreglo con número mayores es: " +
+//     arregloMayorDiez
+// );
 
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres.
+// let arregloCadenas = ["hola", "felix", "lucia", "sofy", "juliana"];
+// function arregloCaracteres(arregloCadenas) {
+//   let nuevoArreglo = [];
+//   for (let i = 0; i < arregloCadenas.length; i++) {
+//     if (arregloCadenas[i].length > 5) {
+//       nuevoArreglo.push(arregloCadenas[i]);
+//     }
+//   }
+
+//   return nuevoArreglo;
+// }
+// console.log(arregloCaracteres(arregloCadenas));
 
 // Dado un array de strings, escribir una función que retorne un nuevo array con todos los strings que tengan más de 5 caracteres y que empiecen con la letra "a".
+// let arregloCadenas = ["hola", "felix", "asturias", "sofy", "juliana"];
+// function arregloCaracteres(arregloCadenas) {
+//   let nuevoArreglo = [];
+//   for (let i = 0; i < arregloCadenas.length; i++) {
+//     console.log(arregloCadenas[i][0]);
+//     if (arregloCadenas[i].length > 5 && arregloCadenas[i][0] === "a") {
+//       nuevoArreglo.push(arregloCadenas[i]);
+//     }
+//   }
+
+//   return nuevoArreglo;
+// }
+// console.log(arregloCaracteres(arregloCadenas));
 
 // Dado un array de números y un número X, escribir una función que retorne un nuevo array con todos los números del array original que sean mayores que X. Además, cortar el array resultante para que tenga solamente los primeros 3 números.
+let arregloNum = [2, 3, 40, 5, 6, 7, 8, 9];
+let numX = 5;
+function mayoresX(arregloNum, numX) {
+  let nuevoArreglo = [];
+  for (let i = 0; i < arregloNum.length; i++) {
+    if (arregloNum[i] > numX) {
+      nuevoArreglo.push(parseInt(arregloNum[i]));
+    }
+  }
+  if (nuevoArreglo.length > 3) {
+    nuevoArreglo.splice(3);
+  }
+  return nuevoArreglo;
+}
+console.log(
+  "El arreglo con los números mayores que " +
+    numX +
+    " es " +
+    mayoresX(arregloNum, numX)
+);

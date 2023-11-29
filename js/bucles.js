@@ -287,3 +287,50 @@ Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
 */
 // let numAleatorio = Math.floor(Math.random() * (99 - 1) + 1);
 // document.write("El número aleatorio es: " + numAleatorio);
+
+/*
+13- Realiza un script que pida un texto y lo muestre en mayúsculas.
+*/
+// let texto = prompt("Ingresa un texto:");
+// document.write("El texto ingresado es: " + texto + "</br>");
+// document.write("Y el texto en mayúscula es: " + texto.toUpperCase());
+
+/*
+14- Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
+*/
+// let cadena = prompt("Ingresa la cadena de texto:");
+// console.log(cadena.split("").join("-"));
+
+/*
+15- Realiza un script que cuente el número de vocales que tiene un texto.
+*/
+// let texto = prompt("Ingresa el texto:");
+// const regexVocal = /([aeiouAEIOU])/g;
+// let cantidadVocales = texto.match(regexVocal);
+// console.log(cantidadVocales);
+// document.write(
+//   "La cantidad de vocales que hay en el texto es: " + cantidadVocales.length
+// );
+
+/*
+16- Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+*/
+// let cadena = prompt("Ingresa la cadena de texto:");
+// let cadenaInvertida = cadena.split("").reverse().join("");
+// document.write("La cadena invertida es: " + cadenaInvertida);
+
+/*
+17- Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
+Ejemplo:
+Input: Hola mundo
+Output: la vocal ‘o’ está en la posición 1
+*/
+// let texto = prompt("Ingresa la cadena de texto:");
+// const regexVocal = /([aeiouAEIOU])/;
+// let arregloVocal = regexVocal.exec(texto);
+// document.write(
+//   "La primer vocal es " +
+//     arregloVocal[0] +
+//     "y esta en la posicion: " +
+//     texto.indexOf(arregloVocal[0])
+// );

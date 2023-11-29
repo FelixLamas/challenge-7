@@ -266,3 +266,24 @@ Output: ‘L’
 // } else {
 //   document.write("No se ingresaron números.");
 // }
+
+/*
+11- Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor. *
+Nota: ver funcion Math() https://www.w3schools.com/js/js_math.asp
+*/
+// let edad = [];
+// let nombre = [];
+// for (let i = 0; i < 3; i++) {
+//   edad[i] = parseInt(prompt("Ingresa la edad:"));
+//   nombre[i] = prompt("Ingresa el nombre:");
+// }
+// let mayorEdad = Math.max(...edad);
+// console.log(mayorEdad);
+// let indice = edad.indexOf(mayorEdad);
+// document.write("El mayor es: " + nombre[indice]);
+
+/*
+12- Realiza un script que genere un número aleatorio entre 1 y 99
+*/
+// let numAleatorio = Math.floor(Math.random() * (99 - 1) + 1);
+// document.write("El número aleatorio es: " + numAleatorio);

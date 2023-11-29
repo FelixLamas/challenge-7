@@ -253,16 +253,16 @@ Output: ‘L’
 
 // if (regexNum.test(filas) && regexNum.test(columnas)) {
 //   let celda = filas * columnas;
+//   document.write("<table>");
 //   for (let i = 1; i <= filas; i++) {
-//     document.write("<table>");
 //     document.write("<tr>");
 //     for (let j = 1; j <= columnas; j++) {
 //       document.write("<td>" + celda + "</td>");
 //       celda--;
 //     }
 //     document.write("</tr>");
-//     document.write("</table>");
 //   }
+//   document.write("</table>");
 // } else {
 //   document.write("No se ingresaron números.");
 // }

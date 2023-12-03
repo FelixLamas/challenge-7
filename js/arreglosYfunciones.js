@@ -105,3 +105,125 @@ Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona
 // }
 // document.write("</tbody>");
 // document.write("</table>");
+
+/*
+4- Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.
+*/
+// function esPar(numero = undefined) {
+//   if (numero === undefined) {
+//     return console.error("No se ingreso un valor");
+//   }
+//   if (typeof numero !== "number") {
+//     return console.error("No se ingreso un número ");
+//   }
+//   if (numero % 2 === 0) {
+//     return "El número ingresado es un numero par.";
+//   } else {
+//     return "El número ingresado NO es un numero par.";
+//   }
+// }
+
+// let mensaje = esPar(10.5);
+// document.write(mensaje);
+
+/*
+5- Definir una función que muestre información sobre una cadena de texto que se le pasa como argumento. A partir de la cadena que se le pasa, la función determina si esa cadena está formada sólo por mayúsculas, sólo por minúsculas o por una mezcla de ambas.
+*/
+// const regexMin = /([a-z])/g;
+// const regexMay = /([A-Z])/g;
+
+// function informacionCadena(cadena = undefined) {
+//   if (cadena === undefined) {
+//     return console.error("No se ingreso la cadena de texto");
+//   }
+//   if (cadena === " " || cadena === "") {
+//     return console.error("Se ingreso una cadena vacia");
+//   }
+//   if (typeof cadena === "number") {
+//     return console.warn("Se ingreso un número, se debe ingresar texto");
+//   }
+
+//   if (
+//     cadena.match(regexMin) &&
+//     cadena.split("").filter((e) => e !== " ").length ===
+//       cadena.match(regexMin).length
+//   ) {
+//     document.write("La cadena ingresada esta en minúscula");
+//   } else if (
+//     cadena.match(regexMay) &&
+//     cadena.split("").filter((e) => e !== " ").length ===
+//       cadena.match(regexMay).length
+//   ) {
+//     document.write("La cadena ingresada esta en mayúscula");
+//   } else {
+//     document.write("La cadena ingresada tiene mayúsculas y minúsculas");
+//   }
+// }
+
+//informacionCadena("la vaca lola");
+//informacionCadena("LA BACA LOL");
+//informacionCadena("LA BACA oo");
+//informacionCadena("");
+
+/*
+6- Solicitar por pantalla al usuario ingresar el valor de los lados de un rectángulo, luego crear una función para calcular su perímetro y mostrarlo por pantalla.
+La fórmula del perímetro  es p = 2*(a +b)
+Ejemplo:
+Input:
+lado A = 24
+lado B = 5
+Output: 58
+*/
+// function perimetro(base, altura) {
+//   if (base < 0) {
+//     return console.warn("Se ingreso un nńumero negativo");
+//   }
+//   if (altura < 0) {
+//     return console.warn("Se ingreso un nńumero negativo");
+//   }
+//   return 2 * (base + altura);
+// }
+// let base = parseInt(prompt("Ingresa la base del rectángulo:"));
+// let altura = parseInt(prompt("Ingresa la altura del rectángulo:"));
+// const regexNum = /([0-9])$/;
+// if (regexNum.test(base) && regexNum.test(altura)) {
+//   let peri = perimetro(base, altura);
+//   document.write("El perímetro del rectángulo es: " + peri);
+// } else {
+//   console.error("No se ingresaron los datos validos");
+// }
+
+/*
+7- Escriba un script que muestre la tabla de multiplicar de un número ingresado por pantalla, la creación de la tabla debe ser realizada con una función y mostrar solo los resultados del 1 al 10 del número elegido por el usuario.
+*/
+function tablaMultiplicar(numero) {
+  let resultado = 0;
+  document.write("<table>");
+  document.write("<thead>");
+  document.write("<tr>");
+  document.write("<th>Factores</th>");
+  document.write("<th>Resultado</th>");
+  document.write("</tr>");
+  document.write("</thead>");
+  document.write("<tbody>");
+  for (let i = 0; i < 10; ++i) {
+    resultado = numero * i;
+    if (resultado <= 10) {
+      document.write("<tr>");
+      document.write("<td> " + numero + " * " + i + "</td>");
+      document.write("<td> " + resultado + "</td>");
+      document.write("</tr>");
+    }
+  }
+  document.write("</tbody>");
+  document.write("</table>");
+}
+let numero = parseInt(prompt("Ingrese un número entero positivo:"));
+const regexNum = /([0-9])$/;
+if (!regexNum.test(numero)) {
+  console.error("No se ingreso un número");
+}
+if (numero < 0) {
+  console.warn("Se ingreso un número negativo, debe ser positivo");
+}
+tablaMultiplicar(numero);
